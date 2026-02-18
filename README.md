@@ -14,7 +14,7 @@ Chaque port dispose :
 - de ses propres fonctionnalités activées
 - de son propre cycle de versioning
 
-Le système repose sur un identifiant unique : **IDPO**.
+Le système repose sur un identifiant unique : **ID_PO**.
 
 Exemples :
 - GRUISS → Port de Gruissan
@@ -44,19 +44,51 @@ L'ID_PO est utilisé pour :
 
 ```bash
 npm start
+```
 
 ### Android
-npm run android
+
+```bash
+# Debug
+npm run android -- <flavor>
+
+# Release
+npm run android -- <flavor> release
+```
+
+#### Exemples
+
+```bash
+npm run android -- gruiss           # Debug → Port de Gruissan
+npm run android -- gruiss release   # Release → Port de Gruissan
+npm run android -- calvad           # Debug → Ports du Calvados    
+```
 
 ### iOS
 
 #### Avant le premier lancement ou après modification des dépendances natives :
 
+```bash
+cd ios
 bundle install
 bundle exec pod install
+cd ..
+```
 
 #### Puis lancer l'application
 
-npm run ios
+```bash
+# Debug
+npm run ios -- <scheme>
 
+# Release
+npm run ios -- <scheme> release
+```
 
+#### Exemples
+
+```bash
+npm run ios -- gruiss           # Debug → Port de Gruissan
+npm run ios -- gruiss release   # Release → Port de Gruissan
+npm run ios -- calvad           # Debug → Ports du Calvados    
+```

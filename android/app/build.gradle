@@ -85,6 +85,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -103,6 +104,23 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        gruiss {
+            dimension "default"
+            applicationIdSuffix ".gruiss"
+            resValue "string", "app_name", "Port de Gruissan"
+            buildConfigField "String", "ID_PO", "\"GRUISS\""
+        }
+        calvad {
+            dimension "default"
+            applicationIdSuffix ".calvad"
+            resValue "string", "app_name", "Ports du Calvados"
+            buildConfigField "String", "ID_PO", "\"CALVAD\""
         }
     }
 }
