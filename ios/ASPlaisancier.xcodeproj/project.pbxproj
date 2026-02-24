@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8CFB6AC9D440F1F46482BADE /* libPods-ASPlaisancier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F252A7FCAC0D1001FFE1E8 /* libPods-ASPlaisancier.a */; };
 		D65862E487A0683810A11625 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		D99B39E32F4DFA2100EC7DE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99B39E22F4DFA2100EC7DE1 /* LaunchScreen.storyboard */; };
+		D99B39E52F4DFD3100EC7DE1 /* LaunchScreen-GRUISS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99B39E42F4DFD3100EC7DE1 /* LaunchScreen-GRUISS.storyboard */; };
+		D99B39E72F4DFD4D00EC7DE1 /* LaunchScreen-CALVAD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99B39E62F4DFD4D00EC7DE1 /* LaunchScreen-CALVAD.storyboard */; };
 		D9AE067D2F45C363001CC6FB /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AE067C2F45C363001CC6FB /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +25,11 @@
 		57F252A7FCAC0D1001FFE1E8 /* libPods-ASPlaisancier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASPlaisancier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FFACD74F1C81F97148E48D1 /* Pods-ASPlaisancier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASPlaisancier.release.xcconfig"; path = "Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier.release.xcconfig"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ASPlaisancier/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ASPlaisancier/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		977EBDCCBC38F1079E3A354A /* Pods-ASPlaisancier.gruissrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASPlaisancier.gruissrelease.xcconfig"; path = "Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier.gruissrelease.xcconfig"; sourceTree = "<group>"; };
 		D5E69D81712AB48402464094 /* Pods-ASPlaisancier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASPlaisancier.debug.xcconfig"; path = "Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier.debug.xcconfig"; sourceTree = "<group>"; };
+		D99B39E22F4DFA2100EC7DE1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D99B39E42F4DFD3100EC7DE1 /* LaunchScreen-GRUISS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen-GRUISS.storyboard"; sourceTree = "<group>"; };
+		D99B39E62F4DFD4D00EC7DE1 /* LaunchScreen-CALVAD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "LaunchScreen-CALVAD.storyboard"; sourceTree = "<group>"; };
 		D9AE067C2F45C363001CC6FB /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConfig.swift; path = ASPlaisancier/AppConfig.swift; sourceTree = "<group>"; };
 		D9AE067E2F45C3BC001CC6FB /* ASPlaisancier-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ASPlaisancier-Bridging-Header.h"; path = "ASPlaisancier/ASPlaisancier-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDE219BF114F4CAEC115B679 /* Pods-ASPlaisancier.calvadrelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASPlaisancier.calvadrelease.xcconfig"; path = "Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier.calvadrelease.xcconfig"; sourceTree = "<group>"; };
@@ -54,7 +58,9 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				D99B39E22F4DFA2100EC7DE1 /* LaunchScreen.storyboard */,
+				D99B39E42F4DFD3100EC7DE1 /* LaunchScreen-GRUISS.storyboard */,
+				D99B39E62F4DFD4D00EC7DE1 /* LaunchScreen-CALVAD.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
 			name = ASPlaisancier;
@@ -171,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D99B39E52F4DFD3100EC7DE1 /* LaunchScreen-GRUISS.storyboard in Resources */,
+				D99B39E32F4DFA2100EC7DE1 /* LaunchScreen.storyboard in Resources */,
+				D99B39E72F4DFD4D00EC7DE1 /* LaunchScreen-CALVAD.storyboard in Resources */,
 				D65862E487A0683810A11625 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,9 +212,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,9 +233,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ASPlaisancier/Pods-ASPlaisancier-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -279,6 +295,8 @@
 				ENABLE_BITCODE = NO;
 				ID_PO = "";
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +333,8 @@
 				DEVELOPMENT_TEAM = 74AMW4W9N4;
 				ID_PO = "";
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,6 +609,8 @@
 				ENABLE_BITCODE = NO;
 				ID_PO = CALVAD;
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -699,6 +721,8 @@
 				DEVELOPMENT_TEAM = 74AMW4W9N4;
 				ID_PO = CALVAD;
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -817,6 +841,8 @@
 				ENABLE_BITCODE = NO;
 				ID_PO = GRUISS;
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -927,6 +953,8 @@
 				DEVELOPMENT_TEAM = 74AMW4W9N4;
 				ID_PO = GRUISS;
 				INFOPLIST_FILE = ASPlaisancier/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

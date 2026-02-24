@@ -24,6 +24,8 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>ID_PO</key>
+	<string>$(ID_PO)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -44,7 +46,7 @@
 		<string>FontAwesome6_Solid.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
+	<string>LaunchScreen-$(ID_PO)</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>arm64</string>
@@ -62,7 +64,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>ID_PO</key>
-	<string>$(ID_PO)</string>
 </dict>
 </plist>
