@@ -1,18 +1,34 @@
-import { Text, NativeModules, StatusBar, useColorScheme } from 'react-native';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+// App.tsx
 
-const { AppConfig } = NativeModules;
+import React from "react";
+import { StatusBar } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { NavigationContainer } from "@react-navigation/native";
+ 
+import { AppProvider, useApp } from "@/app";
+import { getStatusBarStyle } from "@/utils/statusBar";
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+import { RootStackNavigator } from "@/navigation";
+
+function AppContent() {
+  const { theme } = useApp();
 
   return (
+    <>
+      <StatusBar backgroundColor={theme.statusBarBackgroundColor} barStyle={getStatusBarStyle(theme)} />
+      <NavigationContainer>
+        <RootStackNavigator />
+      </NavigationContainer>
+    </>
+  )
+}
+
+function App() {
+  return (
     <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <SafeAreaView style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Hello, World !</Text>
-        <Text>ID_PO : {AppConfig.ID_PO}</Text>
-      </SafeAreaView>
+      <AppProvider>
+        <AppContent />
+      </AppProvider>
     </SafeAreaProvider>
   );
 }
