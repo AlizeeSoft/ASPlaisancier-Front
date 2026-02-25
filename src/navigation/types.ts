@@ -7,5 +7,19 @@ export type RootStackParamsList = {
 };
 
 export type BottomTabParamList = {
-    // add tabs
+    HomeStack: NavigatorScreenParams<HomeStackParamsList>;
+    HarborStack: NavigatorScreenParams<HarborStackParamsList>;
+    ProfileStack: NavigatorScreenParams<ProfileStackParamsList>;
+}
+
+export type HomeStackParamsList = {
+    Home: undefined
+}
+
+export type HarborStackParamsList = {
+    Harbor: undefined
+}
+
+export type ProfileStackParamsList = {
+    Profile: undefined
 }

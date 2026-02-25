@@ -1,28 +1,46 @@
 // BottomTabNavigator.tsx
 
 import React from "react";
-import { View, Text } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import FontAwesome6 from "@react-native-vector-icons/fontawesome6";
 
-const Tab = createBottomTabNavigator();
+import HomeStackNavigator from "./HomeStackNavigator";
+import HarborStackNavigator from "./HarborStackNavigator";
+import ProfileStackNavigator from "./ProfileStackNavigator";
+
+import TabIcon from "@/components/TabIcon";
+
+import { BottomTabParamList } from "./types";
+
+const Tab = createBottomTabNavigator<BottomTabParamList>();
+
+import { useApp } from "@/app";
+
+const StackComponents = {
+    HomeStack: HomeStackNavigator,
+    HarborStack: HarborStackNavigator,
+    ProfileStack: ProfileStackNavigator,
+}
 
 const BottomTabNavigator: React.FC = () => {
+    const { tabs } = useApp();
+
     return (
         <Tab.Navigator>
-            <Tab.Screen name="Hello" component={HelloScreen} options={{
-                tabBarIcon: ({ color, size }) => <FontAwesome6 name="house" iconStyle="solid" size={size} color={color} />
-            }} />
+            {tabs.map((tab) => (
+                <Tab.Screen 
+                    key={tab.stack}
+                    name={tab.stack}
+                    component={StackComponents[tab.stack]}
+                    options={{
+                        tabBarLabel: tab.label,
+                        tabBarIcon: ({ color, size }) => (
+                            <TabIcon icon={tab.icon} size={size} color={color} />
+                        )
+                    }}
+                />
+            ))}
         </Tab.Navigator>
     );
 };
 
 export default BottomTabNavigator;
-
-const HelloScreen = () => {
-    return (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Text>Hello, World!</Text>
-        </View>
-    );
-};
