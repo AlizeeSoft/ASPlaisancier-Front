@@ -22,10 +22,13 @@ const StackComponents = {
 }
 
 const BottomTabNavigator: React.FC = () => {
-    const { tabs } = useApp();
+    const { tabs, theme } = useApp();
 
     return (
-        <Tab.Navigator>
+        <Tab.Navigator screenOptions={{
+            headerShown: false,
+            tabBarInactiveTintColor: theme.tabBar.inactiveTintColor,
+        }}>
             {tabs.map((tab) => (
                 <Tab.Screen 
                     key={tab.stack}

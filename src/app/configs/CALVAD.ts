@@ -8,12 +8,18 @@ import { Harbor } from "@/assets/svg";
 
 export const CALVAD: AppConfig = {
     theme: {
-        splashLogo: require("@/assets/logos/calvados.png"),
-        splashBackgroundColor: "#072b4d",
-        splashAccentColor: "#ffffff",
-
-        statusBarStyle: "light-content",
-        statusBarBackgroundColor: "#072b4d",
+        splash: {
+            logo: require("@/assets/logos/calvados.png"),
+            backgroundColor: "#072b4d",
+            loaderColor: "#ffffff"
+        },
+        statusBar: {
+            style: "light-content",
+            backgroundColor: "#072b4d",
+        },
+        tabBar: {
+            activeTintColor: "#072b4d"
+        },
     },
     tabs: [
         {

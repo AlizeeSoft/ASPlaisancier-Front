@@ -6,15 +6,22 @@ import { SvgProps } from "react-native-svg";
 
 import { BottomTabParamList } from "@/navigation/types";
 
-export type ThemeConfig = {
-    // SplashScreen
-    splashLogo: number;
-    splashBackgroundColor: ColorValue;
-    splashAccentColor: ColorValue;
+export type SplashConfig = {
+    logo: number;
+    backgroundColor: ColorValue;
+    loaderColor: ColorValue;
+}
 
-    // StatusBar (Android only < 15)
-    statusBarStyle: StatusBarStyle;
-    statusBarBackgroundColor: ColorValue;
+export type StatusBarConfig = {
+    style: StatusBarStyle;
+    backgroundColor: ColorValue;
+}
+
+export type TabBarConfig = {
+    inactiveTintColor?: string;     // Options du TabBar
+    activeTintColor: string;        // Thème de navigation
+    borderTopColor?: string;        // Thème de navigation
+    backgroundColor?: string;       // Thème de navigation
 }
 
 export type TabConfig = {
@@ -22,6 +29,16 @@ export type TabConfig = {
     label: string;
     icon: LucideIcon | React.FC<SvgProps> ;
 }   
+
+export type ThemeConfig = {
+    splash: SplashConfig;
+
+    // StatusBar (Android only < 15)
+    statusBar: StatusBarConfig;
+
+    // Tab Bar options
+    tabBar: TabBarConfig;
+}
 
 export type AppConfig = {
     theme: ThemeConfig;

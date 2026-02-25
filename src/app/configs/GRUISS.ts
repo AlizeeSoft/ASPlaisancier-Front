@@ -8,12 +8,18 @@ import { Harbor } from "@/assets/svg";
 
 export const GRUISS: AppConfig = {
     theme: {
-        splashLogo: require("@/assets/logos/gruissan.png"),
-        splashBackgroundColor: "#054360",
-        splashAccentColor: "#ffffff",
-
-        statusBarStyle: "light-content",
-        statusBarBackgroundColor: "#054360",
+        splash: {
+            logo: require("@/assets/logos/gruissan.png"),
+            backgroundColor: "#054360",
+            loaderColor: "#ffffff"
+        },
+        statusBar: {
+            style: "light-content",
+            backgroundColor: "#054360",
+        },
+        tabBar: {
+            activeTintColor: "#054360"
+        },
     },
     tabs: [
         {

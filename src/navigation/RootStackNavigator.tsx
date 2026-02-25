@@ -16,11 +16,7 @@ const RootStackNavigator: React.FC = () => {
     const [isAppReady, setIsAppReady] = useState<boolean>(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setIsAppReady(true);
-        }, 5000);   // 5 secondes
-
-        return () => clearTimeout(timer)
+        setIsAppReady(true);
     }, []);
 
     if (showSplash) return <SplashScreen isAppReady={isAppReady} onFinish={() => setShowSplash(false)} />

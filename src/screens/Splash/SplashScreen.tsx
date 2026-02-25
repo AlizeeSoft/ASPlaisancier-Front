@@ -1,7 +1,7 @@
 // SplashScreen.tsx
 
 import React, { useCallback, useEffect, useRef, useState, useMemo } from "react";
-import { View, Animated, Easing, ActivityIndicator, StatusBar, StatusBarStyle } from "react-native";
+import { View, Animated, Easing, ActivityIndicator, StatusBar } from "react-native";
 
 import { SplashScreenProps } from "./SplashScreen.types";
 import { styles } from "./SplashScreen.styles";
@@ -17,9 +17,9 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isAppReady, onFinish }) => 
     const { theme } = useApp();
 
     const splashBarStyle = useMemo(() => {
-        const dark = isColorDark(String(theme.splashBackgroundColor));
+        const dark = isColorDark(String(theme.splash.backgroundColor));
         return dark ? "light-content" : "dark-content";
-    }, [theme.splashBackgroundColor]);
+    }, [theme.splash.backgroundColor]);
 
     const logoScale = useRef(new Animated.Value(0)).current;
     const hasFinished = useRef(false);
@@ -51,15 +51,15 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isAppReady, onFinish }) => 
     return (
         <>
             <StatusBar barStyle={splashBarStyle} />
-            <View style={{ ...styles.container, backgroundColor: theme.splashBackgroundColor }}>
+            <View style={{ ...styles.container, backgroundColor: theme.splash.backgroundColor }}>
                 <Animated.Image
-                    source={theme.splashLogo}
+                    source={theme.splash.logo}
                     style={[{ width: BASE_LOGO_SIZE, height: BASE_LOGO_SIZE }, logoStyle]}
                     resizeMode="contain"
                 />
 
                 {animationDone && !isAppReady && (
-                    <ActivityIndicator size="small" color={theme.splashAccentColor} style={styles.loader} />
+                    <ActivityIndicator size="small" color={theme.splash.loaderColor} style={styles.loader} />
                 )}
             </View>
         </>

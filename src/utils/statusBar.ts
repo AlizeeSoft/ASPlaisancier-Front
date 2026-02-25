@@ -7,7 +7,7 @@ import { ThemeConfig } from "@/app/types";
 import { isColorDark } from "./color";
 
 export function getStatusBarStyle(theme: ThemeConfig): StatusBarStyle {
-    if (Platform.OS === "ios") return theme.statusBarStyle;
+    if (Platform.OS === "ios") return theme.statusBar.style;
 
     const version = Number(Platform.Version);
     
@@ -15,7 +15,7 @@ export function getStatusBarStyle(theme: ThemeConfig): StatusBarStyle {
     if (version >= 35) return "dark-content";
 
     // Android < 15 → on se base sur la couleur du thème
-    return isColorDark(String(theme.statusBarBackgroundColor))
+    return isColorDark(String(theme.statusBar.backgroundColor))
         ? "light-content"
         : "dark-content";
 }
