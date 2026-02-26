@@ -7,7 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
  
 import { AppProvider, useApp } from "@/app";
 import { getStatusBarStyle } from "@/utils/statusBar";
-import { createNavigationTheme } from "@/app/configs/navigationConfig";
+import { createNavigationTheme } from "@/app/navigationConfig";
 
 import { RootStackNavigator } from "@/navigation";
 

@@ -23,7 +23,7 @@ const RootStackNavigator: React.FC = () => {
 
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Tabs" component={BottomTabNavigator} />
+            <Stack.Screen name="Tabs" component={BottomTabNavigator} options={{ headerShown: false }} />
         </Stack.Navigator>
     );
 };

@@ -14,7 +14,7 @@ export const CALVAD: AppConfig = {
             loaderColor: "#ffffff"
         },
         statusBar: {
-            style: "light-content",
+            style: "dark-content",
             backgroundColor: "#072b4d",
         },
         tabBar: {

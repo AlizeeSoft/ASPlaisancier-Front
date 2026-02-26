@@ -1,7 +1,7 @@
-// app/configs/navigationConfig.ts
+// app/navigationConfig.ts
 
 import { DefaultTheme, Theme } from "@react-navigation/native";
-import { ThemeConfig } from "../types";
+import { ThemeConfig } from "./types";
 
 export const createNavigationTheme = (colors: ThemeConfig): Theme => ({
     ...DefaultTheme,

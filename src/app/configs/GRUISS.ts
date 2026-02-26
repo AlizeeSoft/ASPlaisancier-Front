@@ -14,7 +14,7 @@ export const GRUISS: AppConfig = {
             loaderColor: "#ffffff"
         },
         statusBar: {
-            style: "light-content",
+            style: "dark-content",
             backgroundColor: "#054360",
         },
         tabBar: {
