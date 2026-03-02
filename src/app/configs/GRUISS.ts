@@ -6,19 +6,35 @@ import { AppConfig } from "../types";
 
 import { Harbor } from "@/assets/svg";
 
+const colors = {
+    PRIMARY: "#054360",
+    ACCENT: "#f58172",
+    BACKGROUND: "#f7fcfe",
+    WHITE: "#fff",
+    BACK_WAVE: "#336e88cc",
+    FRONT_WAVE: "#0f5b7ee6"
+}
+
 export const GRUISS: AppConfig = {
     theme: {
+        background: colors.BACKGROUND,
+        logo: require("@/assets/logos/gruissan.png"),
         splash: {
-            logo: require("@/assets/logos/gruissan.png"),
-            backgroundColor: "#054360",
-            loaderColor: "#ffffff"
+            backgroundColor: colors.PRIMARY,
+            loaderColor: colors.WHITE,
         },
         statusBar: {
             style: "dark-content",
-            backgroundColor: "#054360",
+            backgroundColor: colors.PRIMARY,
         },
         tabBar: {
-            activeTintColor: "#054360"
+            activeTintColor: colors.PRIMARY,
+        },
+        accessPortal: {
+            backgroundColor: colors.PRIMARY,
+            backWaveColor: colors.BACK_WAVE,
+            frontWaveColor: colors.FRONT_WAVE,
+            buttonColor: colors.ACCENT,
         },
     },
     tabs: [

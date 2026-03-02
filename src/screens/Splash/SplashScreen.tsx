@@ -53,7 +53,7 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ isAppReady, onFinish }) => 
             <StatusBar barStyle={splashBarStyle} />
             <View style={{ ...styles.container, backgroundColor: theme.splash.backgroundColor }}>
                 <Animated.Image
-                    source={theme.splash.logo}
+                    source={theme.logo}
                     style={[{ width: BASE_LOGO_SIZE, height: BASE_LOGO_SIZE }, logoStyle]}
                     resizeMode="contain"
                 />

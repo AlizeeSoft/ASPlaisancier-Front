@@ -18,10 +18,12 @@ const ProfileStackNavigator: React.FC = () => {
 
 export default ProfileStackNavigator;
 
+import PortalAccessCard from "@/components/PortalAccessCard";
+
 const ProfileScreen = () => {
     return (
-        <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-            <Text>Profile</Text>
+        <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 16 }}>
+            <PortalAccessCard onPress={() => console.log("Accéder à mon espace")} />
         </View>
     );
 };

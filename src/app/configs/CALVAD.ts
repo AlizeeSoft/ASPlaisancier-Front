@@ -6,19 +6,35 @@ import { AppConfig } from "../types";
 
 import { Harbor } from "@/assets/svg";
 
+const colors = {
+    PRIMARY: "#072b4d",
+    ACCENT: "#13A2AF",
+    BACKGROUND: "#f7fcfe",
+    WHITE: "#fff",
+    BACK_WAVE: "#355d83cc",
+    FRONT_WAVE: "#1c476fe6"
+}
+
 export const CALVAD: AppConfig = {
     theme: {
+        background: colors.BACKGROUND,
+        logo: require("@/assets/logos/calvados.png"),
         splash: {
-            logo: require("@/assets/logos/calvados.png"),
-            backgroundColor: "#072b4d",
-            loaderColor: "#ffffff"
+            backgroundColor: colors.PRIMARY,
+            loaderColor: colors.WHITE,
         },
         statusBar: {
             style: "dark-content",
-            backgroundColor: "#072b4d",
+            backgroundColor: colors.PRIMARY,
         },
         tabBar: {
-            activeTintColor: "#072b4d"
+            activeTintColor: colors.PRIMARY,
+        },
+        accessPortal: {
+            backgroundColor: colors.PRIMARY,
+            backWaveColor: colors.BACK_WAVE,
+            frontWaveColor: colors.FRONT_WAVE,
+            buttonColor: colors.ACCENT,
         },
     },
     tabs: [
@@ -37,5 +53,5 @@ export const CALVAD: AppConfig = {
             label: "Compte",
             icon: User
         },
-    ]
+    ],
 };

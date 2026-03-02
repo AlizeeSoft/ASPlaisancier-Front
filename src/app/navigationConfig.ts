@@ -7,6 +7,7 @@ export const createNavigationTheme = (colors: ThemeConfig): Theme => ({
     ...DefaultTheme,
     colors: {
         ...DefaultTheme.colors,
+        background: colors.background,
         primary: colors.tabBar.activeTintColor,
         card: colors.tabBar.backgroundColor ?? DefaultTheme.colors.card,
         border: colors.tabBar.borderTopColor ?? DefaultTheme.colors.border,
